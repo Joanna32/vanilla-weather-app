@@ -10,6 +10,18 @@
       integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
       crossorigin="anonymous"
     />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Courgette&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="src/style.css" />
     <title>Weather App</title>
   </head>
@@ -19,7 +31,7 @@
         <div class="weather">
           <form>
             <div class="row">
-              <div class="col-9">
+              <div class="col-8">
                 <input
                   type="text"
                   class="form-control"
@@ -27,7 +39,7 @@
                   placeholder="Enter a city.."
                 />
               </div>
-              <div class="col-3">
+              <div class="col-4">
                 <input
                   type="submit"
                   class="btn btn-primary"
@@ -39,7 +51,7 @@
           </form>
           <div class="currentWeather">
             <div class="row">
-              <div class="col-9">
+              <div class="col-7">
                 <h1>Munich</h1>
                 <span class="date">Thursday</span>
                 <span class="time">12:10</span>
@@ -52,14 +64,13 @@
                 </div>
               </div>
 
-              <div class="col-3">
-                <img src="images/sunny.png" alt="sun" />
+              <div class="col-5">
+                <img src="images/sunny.png" class="weather-icon" alt="sun" />
                 <span class="temp" id="current-temp">16</span>
-                <div class="units">
-                  <span id="celsius-unit"
-                    ><strong> <a href="#" class="celsiusMark">°C</a> </strong>
-                    |</span
-                  >
+                <div class="temp-units">
+                  <span id="celsius-unit">
+                    <strong> <a href="#" class="celsiusMark">°C</a> </strong> |
+                  </span>
                   <span id="fahrenheit-unit">
                     <a href="#" class="fahrenheitMark">°F</a></span
                   >
@@ -111,9 +122,25 @@
               </div>
             </div>
           </div>
+          <hr />
+          <p>
+            This page was coded by Joanna Banas and is opned-sourced on
+            <a
+              href="https://github.com/Joanna32/vanilla-weather-app"
+              target="_blank"
+              >Github</a
+            >
+            and hosted on
+            <a
+              href="https://admiring-heyrovsky-10087d.netlify.app"
+              target="_blank"
+              >Netlify</a
+            >
+          </p>
         </div>
       </div>
     </div>
+
     <script src="src/app.js"></script>
   </body>
 </html>
