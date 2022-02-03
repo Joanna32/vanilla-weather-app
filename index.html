@@ -19,7 +19,7 @@
         <div class="weather">
           <form>
             <div class="row">
-              <div class="col-8">
+              <div class="col-9">
                 <input
                   type="text"
                   class="form-control"
@@ -27,7 +27,7 @@
                   placeholder="Enter a city.."
                 />
               </div>
-              <div class="col-4">
+              <div class="col-3">
                 <input
                   type="submit"
                   class="btn btn-primary"
@@ -39,11 +39,11 @@
           </form>
           <div class="currentWeather">
             <div class="row">
-              <div class="col-8">
+              <div class="col-9">
                 <h1>Munich</h1>
-                <div id="weather-conditions">sunny</div>
                 <span class="date">Thursday</span>
                 <span class="time">12:10</span>
+                <div id="weather-conditions">sunny</div>
                 <div class="unit" id="humidity">
                   <span class="unitDescription">Humidity:</span> 20%
                 </div>
@@ -52,7 +52,8 @@
                 </div>
               </div>
 
-              <div class="col-4">
+              <div class="col-3">
+                <img src="images/sunny.png" alt="sun" />
                 <span class="temp" id="current-temp">16</span>
                 <div class="units">
                   <span id="celsius-unit"
@@ -62,6 +63,50 @@
                   <span id="fahrenheit-unit">
                     <a href="#" class="fahrenheitMark">°F</a></span
                   >
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="forecast" id="daily-forecast">
+            <div class="row">
+              <div class="col">
+                <div class="days">Mon</div>
+                <img src="images/cloudy.png" alt="cloud" />
+                <br />
+                <div class="temperature" id="forecast-temperature">
+                  <strong>10°</strong> 8°
+                </div>
+              </div>
+              <div class="col">
+                <div class="days">Thus</div>
+                <img src="images/rain.png" alt="rain" />
+                <br />
+                <div class="temperature" id="forecast-temperature">
+                  <strong>10°</strong> 8°
+                </div>
+              </div>
+              <div class="col">
+                <div class="days">Wed</div>
+                <img src="images/partly-cloudy.png" alt="partly-cloudy" />
+                <br />
+                <div class="temperature" id="forecast-temperature">
+                  <strong>10°</strong> 8°
+                </div>
+              </div>
+              <div class="col">
+                <div class="days">Thu</div>
+                <img src="images/sun.png" alt="sun" />
+                <br />
+                <div class="temperature" id="forecast-temperature">
+                  <strong>10°</strong> 8°
+                </div>
+              </div>
+              <div class="col">
+                <div class="days">Fri</div>
+                <img src="images/sun.png" alt="sun" />
+                <br />
+                <div class="temperature" id="forecast-temperature">
+                  <strong>10°</strong> 8°
                 </div>
               </div>
             </div>

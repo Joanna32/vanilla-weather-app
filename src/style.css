@@ -1,3 +1,26 @@
 h1 {
   color: rgb(53, 53, 255);
 }
+img {
+  width: 30px;
+}
+.currentWeather {
+  margin: 50px 0;
+}
+
+.project {
+  margin: 40px auto;
+}
+.units {
+  display: inline;
+}
+.weather {
+  max-width: 65%;
+  margin: 0 auto;
+  border: 1px solid grey;
+  border-radius: 10px;
+  padding: 20px;
+}
+.forecast {
+  text-align: center;
+}
