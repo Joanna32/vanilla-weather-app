@@ -1,6 +1,6 @@
 h1 {
-  font-family: "Roboto Mono", monospace;
   font-weight: 500;
+  margin-bottom: 0;
 }
 img {
   width: 30px;
@@ -10,12 +10,31 @@ p {
   text-align: center;
   margin-top: 35px;
 }
-.project {
-  margin: 90px auto;
+.unitDescription,
+.date,
+.time,
+.days {
+  font-size: 15px;
+  font-weight: 500;
+  opacity: 0.7;
+}
+.units strong {
+  font-size: 15px;
+}
+.weather-description,
+.units strong,
+hr {
+  color: rgb(190, 19, 148);
+}
+
+.weather-description {
+  font-size: 25px;
+  margin-top: 10px;
+  font-family: "Courgette", cursive;
 }
 .weather {
-  max-width: 70%;
-  margin: 0 auto;
+  max-width: 65%;
+  margin: 30px auto;
   border: 1px solid grey;
   border-radius: 10px;
   padding: 20px;
@@ -23,13 +42,14 @@ p {
   font-weight: 400;
 }
 .currentWeather {
-  margin: 50px 0;
+  margin: 50px auto;
 }
 
 .weather-icon {
   position: relative;
-  top: -35px;
-  width: 55px;
+  top: -25px;
+  right: -10px;
+  width: 75px;
 }
 .temp {
   font-weight: 500;
@@ -39,22 +59,25 @@ p {
   display: inline;
   position: relative;
   top: -35px;
+  left: -12px;
 }
-.celsiusMark,
-.fahrenheitMark {
+
+.fahrenheitMark,
+.celsiusMark {
   text-decoration: none;
   color: black;
   font-size: 20px;
 }
+.celsiusMark {
+  position: relative;
+  left: -2px;
+}
 .fahrenheitMark {
   position: relative;
-  left: -8px;
+  left: -5px;
 }
 
 .forecast {
   text-align: center;
   margin-bottom: 45px;
-}
-#weather-conditions {
-  font-family: "Courgette", cursive;
 }
