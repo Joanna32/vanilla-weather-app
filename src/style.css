@@ -8,39 +8,64 @@ img {
 p {
   font-size: 12px;
   text-align: center;
-  margin-top: 35px;
+}
+hr {
+  color: rgb(185, 181, 181);
+}
+p a {
+  text-decoration: none;
+  color: #9e3668;
+  font-weight: bolder;
+}
+
+.project {
+  max-width: 60%;
+  background: linear-gradient(
+    0deg,
+    rgb(252, 252, 252) 23.8%,
+    rgb(250, 248, 248) 92%
+  );
+  margin: 40px auto;
+  border: 1px solid rgb(185, 181, 181);
+  border-radius: 10px;
+  padding: 20px 20px 0;
+  font-family: "Roboto Mono", monospace;
+}
+.form-control {
+  background-color: rgb(250, 247, 247);
+  border: 1px solid #9e3668;
+}
+.button {
+  font-size: 17px;
+  padding: 6px 45px;
+  background-color: #9e3668;
+  border: 1px solid #9e3668;
+}
+.button:hover {
+  background-color: #9e3668;
+  border: 1px solid #9e3668;
 }
 .unitDescription,
 .date,
 .time,
 .days {
   font-size: 15px;
-  font-weight: 500;
+  font-weight: 400;
   opacity: 0.7;
 }
-.units strong {
+.variableConditions {
+  color: #e7759a;
   font-size: 15px;
-}
-.weather-description,
-.units strong,
-hr {
-  color: rgb(190, 19, 148);
-}
-
-.weather-description {
-  font-size: 25px;
-  margin-top: 10px;
-  font-family: "Courgette", cursive;
-}
-.weather {
-  max-width: 65%;
-  margin: 30px auto;
-  border: 1px solid grey;
-  border-radius: 10px;
-  padding: 20px;
-  font-family: "Roboto Mono", monospace;
   font-weight: 400;
 }
+
+.weatherDescription {
+  font-size: 20px;
+  margin-top: 10px;
+  opacity: 0.7;
+  font-family: "Courgette", cursive;
+}
+
 .currentWeather {
   margin: 50px auto;
 }
@@ -55,18 +80,18 @@ hr {
   font-weight: 500;
   font-size: 65px;
 }
-.temp-units {
+.tempUnits {
   display: inline;
   position: relative;
   top: -35px;
   left: -12px;
 }
 
-.fahrenheitMark,
-.celsiusMark {
+.tempValue a {
   text-decoration: none;
   color: black;
   font-size: 20px;
+  font-weight: 500;
 }
 .celsiusMark {
   position: relative;
@@ -75,6 +100,7 @@ hr {
 .fahrenheitMark {
   position: relative;
   left: -5px;
+  opacity: 0.7;
 }
 
 .forecast {

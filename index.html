@@ -28,119 +28,120 @@
   <body>
     <div class="project">
       <div class="container">
-        <div class="weather">
-          <form>
-            <div class="row">
-              <div class="col-8">
-                <input
-                  type="text"
-                  class="form-control"
-                  id="type-city"
-                  placeholder="Enter a city.."
-                />
+        <form>
+          <div class="row">
+            <div class="col-8">
+              <input
+                type="text"
+                class="form-control"
+                id="type-city"
+                placeholder="Enter a city.."
+              />
+            </div>
+            <div class="col-4">
+              <input
+                type="submit"
+                class="button btn btn-primary"
+                id="search-button"
+                value="Search"
+              />
+            </div>
+          </div>
+        </form>
+        <div class="currentWeather">
+          <div class="row">
+            <div class="col-7">
+              <h1>Munich</h1>
+              <span class="date" id="current-date">Thursday</span>
+              <span class="time" id="current-time">12:10</span>
+              <div class="weatherDescription" id="weather-conditions">
+                sunny
               </div>
-              <div class="col-4">
-                <input
-                  type="submit"
-                  class="btn btn-primary"
-                  id="search-button"
-                  value="Search"
-                />
+              <div class="units">
+                <span class="unitDescription">Humidity:</span>
+                <span class="variableConditions" id="humidity"> 20%</span>
+                <br />
+                <span class="unitDescription">Wind:</span>
+                <span class="variableConditions" id="wind">10km/h</span>
               </div>
             </div>
-          </form>
-          <div class="currentWeather">
-            <div class="row">
-              <div class="col-7">
-                <h1>Munich</h1>
-                <span class="date" id="current-date">Thursday</span>
-                <span class="time" id="current-time">12:10</span>
-                <div class="weather-description" id="weather-conditions">
-                  sunny
-                </div>
-                <div class="units">
-                  <span class="unitDescription">Humidity:</span
-                  ><strong id="humidity"> 20%</strong>
-                  <br />
-                  <span class="unitDescription">Wind:</span>
-                  <strong id="wind">10km/h</strong>
-                </div>
-              </div>
 
-              <div class="col-5">
-                <img src="images/sunny.png" class="weather-icon" alt="sun" />
-                <span class="temp" id="current-temp">16</span>
-                <div class="temp-units">
-                  <span id="celsius-unit">
-                    <strong><a href="#" class="celsiusMark">°C</a></strong
-                    >|</span
-                  ><span id="fahrenheit-unit"
-                    ><a href="#" class="fahrenheitMark">°F</a></span
-                  >
-                </div>
+            <div class="col-5">
+              <img src="images/sunny.png" class="weather-icon" alt="sun" />
+              <span class="temp" id="current-temp">16</span>
+              <div class="tempUnits">
+                <span class="tempValue">
+                  <a href="#" class="celsiusMark" id="celsius-mark">°C</a
+                  >|</span
+                ><span class="tempValue"
+                  ><a href="#" class="fahrenheitMark" id="fahrenheit-mark"
+                    >°F</a
+                  ></span
+                >
               </div>
             </div>
           </div>
-          <div class="forecast" id="daily-forecast">
-            <div class="row">
-              <div class="col">
-                <div class="days">Mon</div>
-                <img src="images/cloudy.png" alt="cloud" />
-                <br />
-                <div class="temperature" id="forecast-temperature">
-                  <strong>10°</strong> 8°
-                </div>
-              </div>
-              <div class="col">
-                <div class="days">Thus</div>
-                <img src="images/rain.png" alt="rain" />
-                <br />
-                <div class="temperature" id="forecast-temperature">
-                  <strong>10°</strong> 8°
-                </div>
-              </div>
-              <div class="col">
-                <div class="days">Wed</div>
-                <img src="images/partly-cloudy.png" alt="partly-cloudy" />
-                <br />
-                <div class="temperature" id="forecast-temperature">
-                  <strong>10°</strong> 8°
-                </div>
-              </div>
-              <div class="col">
-                <div class="days">Thu</div>
-                <img src="images/sun.png" alt="sun" />
-                <br />
-                <div class="temperature" id="forecast-temperature">
-                  <strong>10°</strong> 8°
-                </div>
-              </div>
-              <div class="col">
-                <div class="days">Fri</div>
-                <img src="images/sun.png" alt="sun" />
-                <br />
-                <div class="temperature" id="forecast-temperature">
-                  <strong>10°</strong> 8°
-                </div>
-              </div>
-            </div>
-          </div>
-          <hr />
-          <p>
-            This page was coded by Joanna Banas and is opned-sourced on
-            <a
-              href="https://github.com/Joanna32/vanilla-weather-app"
-              target="_blank"
-              >Github</a
-            >
-            and hosted on
-            <a
-              href="https://admiring-heyrovsky-10087d.netlify.app"
-              target="_blank"
-              >Netlify</a
-            >
-          </p>
         </div>
+        <div class="forecast" id="daily-forecast">
+          <div class="row">
+            <div class="col">
+              <div class="days">Mon</div>
+              <img src="images/cloudy.png" alt="cloud" />
+              <br />
+              <div class="temperature" id="forecast-temperature">
+                <strong>10°</strong> 8°
+              </div>
+            </div>
+            <div class="col">
+              <div class="days">Thus</div>
+              <img src="images/rain.png" alt="rain" />
+              <br />
+              <div class="temperature" id="forecast-temperature">
+                <strong>10°</strong> 8°
+              </div>
+            </div>
+            <div class="col">
+              <div class="days">Wed</div>
+              <img src="images/partly-cloudy.png" alt="partly-cloudy" />
+              <br />
+              <div class="temperature" id="forecast-temperature">
+                <strong>10°</strong> 8°
+              </div>
+            </div>
+            <div class="col">
+              <div class="days">Thu</div>
+              <img src="images/sun.png" alt="sun" />
+              <br />
+              <div class="temperature" id="forecast-temperature">
+                <strong>10°</strong> 8°
+              </div>
+            </div>
+            <div class="col">
+              <div class="days">Fri</div>
+              <img src="images/sun.png" alt="sun" />
+              <br />
+              <div class="temperature" id="forecast-temperature">
+                <strong>10°</strong> 8°
+              </div>
+            </div>
+          </div>
+        </div>
+        <br />
+        <hr />
+        <p>
+          This page was coded by Joanna Banas and is opened-sourced on
+          <a
+            href="https://github.com/Joanna32/vanilla-weather-app"
+            target="_blank"
+            >Github</a
+          >
+          and hosted on
+          <a
+            href="https://admiring-heyrovsky-10087d.netlify.app"
+            target="_blank"
+            >Netlify</a
+          >
+        </p>
       </div>
     </div>
 
