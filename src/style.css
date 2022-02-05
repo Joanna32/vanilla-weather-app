@@ -47,13 +47,13 @@ p a {
 }
 .unitDescription,
 .date,
-.time,
 .days {
   font-size: 15px;
   font-weight: 400;
   opacity: 0.7;
 }
-.variableConditions {
+.variableConditions,
+.conditionMark {
   color: #e7759a;
   font-size: 15px;
   font-weight: 400;
@@ -64,6 +64,9 @@ p a {
   margin-top: 10px;
   opacity: 0.7;
   font-family: "Courgette", cursive;
+}
+.weatherDescription::first-letter {
+  text-transform: capitalize;
 }
 
 .currentWeather {

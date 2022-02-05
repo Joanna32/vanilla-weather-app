@@ -52,24 +52,25 @@
         <div class="currentWeather">
           <div class="row">
             <div class="col-7">
-              <h1>Munich</h1>
-              <span class="date" id="current-date">Thursday</span>
-              <span class="time" id="current-time">12:10</span>
-              <div class="weatherDescription" id="weather-conditions">
-                sunny
-              </div>
+              <h1 id="city"></h1>
+              <span class="date">Last updated: </span
+              ><span class="date" id="current-date"></span>
+
+              <div class="weatherDescription" id="weather-conditions"></div>
               <div class="units">
                 <span class="unitDescription">Humidity:</span>
-                <span class="variableConditions" id="humidity"> 20%</span>
+                <span class="variableConditions" id="humidity"></span
+                ><span class="conditionMark">%</span>
                 <br />
                 <span class="unitDescription">Wind:</span>
-                <span class="variableConditions" id="wind">10km/h</span>
+                <span class="variableConditions" id="wind"></span
+                ><span class="conditionMark">km/h</span>
               </div>
             </div>
 
             <div class="col-5">
               <img src="images/sunny.png" class="weather-icon" alt="sun" />
-              <span class="temp" id="current-temp">16</span>
+              <span class="temp" id="current-temp"></span>
               <div class="tempUnits">
                 <span class="tempValue">
                   <a href="#" class="celsiusMark" id="celsius-mark">°C</a
