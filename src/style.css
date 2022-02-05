@@ -10,20 +10,21 @@ p {
   text-align: center;
 }
 hr {
-  color: rgb(185, 181, 181);
+  color: rgb(146, 143, 143);
 }
 p a {
   text-decoration: none;
-  color: #9e3668;
+  color: #0f1b72;
   font-weight: bolder;
 }
 
 .project {
   max-width: 60%;
+
   background: linear-gradient(
-    0deg,
-    rgb(252, 252, 252) 23.8%,
-    rgb(233, 201, 201) 92%
+    178.6deg,
+    rgb(162, 213, 245) 3.3%,
+    rgb(252, 253, 255) 109.6%
   );
   margin: 40px auto;
   border: 1px solid rgb(185, 181, 181);
@@ -33,13 +34,13 @@ p a {
 }
 .form-control {
   background-color: rgb(250, 247, 247);
-  border: 1px solid #9e3668;
+  border: 1px solid #070f4e;
 }
 .button {
   font-size: 17px;
   padding: 6px 45px;
-  background-color: #9e3668;
-  border: 1px solid #9e3668;
+  background-color: #070f4e;
+  border: 1px solid #070f4e;
   border-radius: 5px;
   color: white;
 }
@@ -49,11 +50,11 @@ p a {
 .days {
   font-size: 15px;
   font-weight: 400;
-  opacity: 0.7;
+  opacity: 0.8;
 }
 .variableConditions,
 .conditionMark {
-  color: #e7759a;
+  color: #0855c2;
   font-size: 15px;
   font-weight: 400;
 }
@@ -61,7 +62,7 @@ p a {
 .weatherDescription {
   font-size: 20px;
   margin-top: 10px;
-  opacity: 0.7;
+  opacity: 0.8;
   font-family: "Courgette", cursive;
 }
 .weatherDescription::first-letter {
