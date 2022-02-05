@@ -22,7 +22,6 @@ function formatDate(timestamp) {
 }
 
 function showCurrentConditions(response) {
-  console.log(response.data);
   let inputCity = document.querySelector("#city");
   inputCity.innerHTML = response.data.name;
   document.querySelector("#current-date").innerHTML = formatDate(
@@ -38,7 +37,7 @@ function showCurrentConditions(response) {
     response.data.main.temp
   );
 }
-let city = "Munich";
+let city = "Dublin";
 let apiKey = "5c65b0445be84c47d8d9f65d36c11cc2";
 let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
 axios.get(apiUrl).then(showCurrentConditions);
