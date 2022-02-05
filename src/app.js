@@ -27,6 +27,7 @@ function showCurrentConditions(response) {
   let weatherIcon = document.querySelector("#icon");
 
   inputCity.innerHTML = response.data.name;
+
   document.querySelector("#current-date").innerHTML = formatDate(
     response.data.dt * 1000
   );
@@ -45,7 +46,7 @@ function showCurrentConditions(response) {
   );
   weatherIcon.setAttribute("alt", response.data.weather[0].description);
 }
-let city = "London";
+let city = "Dublin";
 let apiKey = "5c65b0445be84c47d8d9f65d36c11cc2";
 let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
 axios.get(apiUrl).then(showCurrentConditions);
