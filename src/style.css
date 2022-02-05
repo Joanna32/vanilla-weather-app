@@ -40,11 +40,10 @@ p a {
   padding: 6px 45px;
   background-color: #9e3668;
   border: 1px solid #9e3668;
+  border-radius: 5px;
+  color: white;
 }
-.button:hover {
-  background-color: #9e3668;
-  border: 1px solid #9e3668;
-}
+
 .unitDescription,
 .date,
 .days {
