@@ -22,7 +22,6 @@ function formatDate(timestamp) {
 }
 
 function showCurrentConditions(response) {
-  console.log(response.data);
   let inputCity = document.querySelector("#city");
   let weatherIcon = document.querySelector("#icon");
 
