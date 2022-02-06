@@ -26,6 +26,7 @@ function showCurrentConditions(response) {
   let weatherIcon = document.querySelector("#icon");
 
   inputCity.innerHTML = response.data.name;
+  celsiusTemp = response.data.main.temp;
 
   document.querySelector("#current-date").innerHTML = formatDate(
     response.data.dt * 1000
@@ -57,7 +58,31 @@ function handleSubmit(event) {
   searchCity(inputCity.value);
 }
 
-searchCity("Dublin");
+function showFahrenheitTemperature(event) {
+  event.preventDefault();
+  celsiusLink.classList.remove("active");
+  fahrenheitLink.classList.add("active");
+  let temperature = document.querySelector("#current-temp");
+  let fahrenheitTemperature = Math.round((celsiusTemp * 9) / 5 + 32);
+  temperature.innerHTML = fahrenheitTemperature;
+}
+function showCelsiusTemperature(event) {
+  event.preventDefault();
+  celsiusLink.classList.add("active");
+  fahrenheitLink.classList.remove("active");
+  let temperature = document.querySelector("#current-temp");
+  temperature.innerHTML = Math.round(celsiusTemp);
+}
+
+let celsiusTemp = null;
 
 let form = document.querySelector("#search-form");
 form.addEventListener("submit", handleSubmit);
+
+let fahrenheitLink = document.querySelector("#fahrenheit-mark");
+fahrenheitLink.addEventListener("click", showFahrenheitTemperature);
+
+let celsiusLink = document.querySelector("#celsius-mark");
+celsiusLink.addEventListener("click", showCelsiusTemperature);
+
+searchCity("Dublin");

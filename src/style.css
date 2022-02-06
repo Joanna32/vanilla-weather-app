@@ -83,21 +83,19 @@ p a {
   display: inline;
   position: relative;
   top: -35px;
-  left: -12px;
+  left: -14px;
 }
 
+.active {
+  color: black;
+}
 .tempValue a {
   text-decoration: none;
-  color: black;
   font-size: 20px;
   font-weight: 500;
 }
-.celsiusMark {
-  position: relative;
-  left: -2px;
-}
+
 .fahrenheitMark {
   position: relative;
   left: -5px;
-  opacity: 0.7;
 }
