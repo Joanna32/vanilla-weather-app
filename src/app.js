@@ -46,7 +46,19 @@ function showCurrentConditions(response) {
   );
   weatherIcon.setAttribute("alt", response.data.weather[0].description);
 }
-let city = "Dublin";
-let apiKey = "5c65b0445be84c47d8d9f65d36c11cc2";
-let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
-axios.get(apiUrl).then(showCurrentConditions);
+
+function searchCity(city) {
+  let apiKey = "5c65b0445be84c47d8d9f65d36c11cc2";
+  let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
+  axios.get(apiUrl).then(showCurrentConditions);
+}
+function handleSubmit(event) {
+  event.preventDefault();
+  let inputCity = document.querySelector("#type-city");
+  searchCity(inputCity.value);
+}
+
+searchCity("Dublin");
+
+let form = document.querySelector("#search-form");
+form.addEventListener("submit", handleSubmit);

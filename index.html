@@ -29,7 +29,7 @@
   <body>
     <div class="project">
       <div class="container">
-        <form>
+        <form id="search-form" class="mb-5">
           <div class="row">
             <div class="col-8">
               <input
@@ -37,15 +37,11 @@
                 class="form-control"
                 id="type-city"
                 placeholder="Enter a city.."
+                autocomplete="off"
               />
             </div>
             <div class="col-4">
-              <input
-                type="submit"
-                class="button"
-                id="search-button"
-                value="Search"
-              />
+              <input type="submit" class="button" value="Search" />
             </div>
           </div>
         </form>
