@@ -3,7 +3,7 @@ h1 {
   margin-bottom: 0;
 }
 img {
-  width: 30px;
+  width: 45px;
 }
 p {
   font-size: 12px;
@@ -11,7 +11,6 @@ p {
 }
 hr {
   color: rgb(146, 143, 143);
-  margin-top: 50px;
 }
 p a {
   text-decoration: none;
@@ -46,17 +45,17 @@ p a {
 }
 
 .unitDescription,
-.date,
-.days {
+.date {
   font-size: 15px;
   font-weight: 400;
   opacity: 0.8;
 }
+
 .variableConditions,
 .conditionMark {
-  color: #0855c2;
+  color: #070f4e;
   font-size: 15px;
-  font-weight: 400;
+  font-weight: 500;
 }
 
 .weatherDescription {
@@ -73,7 +72,7 @@ p a {
   position: relative;
   top: -25px;
   right: -10px;
-  width: 75px;
+  width: 85px;
 }
 .temp {
   font-weight: 500;
@@ -98,4 +97,24 @@ p a {
 .fahrenheitMark {
   position: relative;
   left: -5px;
+}
+.forecast {
+  margin-top: 35px;
+  margin-bottom: 50px;
+  text-align: center;
+}
+.days {
+  font-size: 16px;
+  font-weight: 500;
+}
+.forecast-temperature {
+  color: #070f4e;
+  font-weight: 500;
+}
+.temperature-max {
+  font-size: 16px;
+}
+.temperature-min {
+  font-size: 14px;
+  opacity: 0.8;
 }
