@@ -20,6 +20,26 @@ function formatDate(timestamp) {
   let day = days[date.getDay()];
   return `${day} ${hours}:${minutes}`;
 }
+function showForecast() {
+  let weatherForecast = document.querySelector("#forecast");
+  let forecastHTML = `<div class ="row">`;
+  let days = ["Tue", "Wed", "Thu", "Fri", "Sat"];
+  days.forEach(function (day) {
+    forecastHTML =
+      forecastHTML +
+      `
+            <div class="col">
+              <div class="days">${day}</div>
+              <img src="images/cloudy.png" alt="cloudy" />
+              <div class="forecast-temperature">
+                <span class="temperature-max">20°</span
+                ><span class="temperature-min">15°</span>
+              </div>
+             </div>
+             `;
+  });
+  weatherForecast.innerHTML = forecastHTML;
+}
 
 function showCurrentConditions(response) {
   let inputCity = document.querySelector("#city");
@@ -86,3 +106,4 @@ let celsiusLink = document.querySelector("#celsius-mark");
 celsiusLink.addEventListener("click", showCelsiusTemperature);
 
 searchCity("Dublin");
+showForecast();
