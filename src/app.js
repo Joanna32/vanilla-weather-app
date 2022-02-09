@@ -20,7 +20,8 @@ function formatDate(timestamp) {
   let day = days[date.getDay()];
   return `${day} ${hours}:${minutes}`;
 }
-function showForecast() {
+function showForecast(response) {
+  console.log(response.data);
   let weatherForecast = document.querySelector("#forecast");
   let forecastHTML = `<div class ="row">`;
   let days = ["Tue", "Wed", "Thu", "Fri", "Sat"];
@@ -40,7 +41,11 @@ function showForecast() {
   });
   weatherForecast.innerHTML = forecastHTML;
 }
-
+function getForecast(coordinates) {
+  let apiKey = "5c65b0445be84c47d8d9f65d36c11cc2";
+  let apiUrl = `https://api.openweathermap.org/data/2.5/onecall?lat=${coordinates.lat}&lon=${coordinates.lon}&appid=${apiKey}&units=metric`;
+  axios.get(apiUrl).then(showForecast);
+}
 function showCurrentConditions(response) {
   let inputCity = document.querySelector("#city");
   let weatherIcon = document.querySelector("#icon");
@@ -65,6 +70,8 @@ function showCurrentConditions(response) {
     `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`
   );
   weatherIcon.setAttribute("alt", response.data.weather[0].description);
+  console.log(response.data);
+  getForecast(response.data.coord);
 }
 
 function searchCity(city) {
@@ -106,4 +113,3 @@ let celsiusLink = document.querySelector("#celsius-mark");
 celsiusLink.addEventListener("click", showCelsiusTemperature);
 
 searchCity("Dublin");
-showForecast();
