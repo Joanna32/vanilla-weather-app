@@ -42,7 +42,7 @@ function showForecast(response) {
         `
             <div class="col">
               <div class="days">${formatDay(forecastDay.dt)}</div>
-              <img src="http://openweathermap.org/img/wn/${
+              <img src="https://openweathermap.org/img/wn/${
                 forecastDay.weather[0].icon
               }@2x.png" alt=${forecastDay.weather[0].description} />
               <div class="forecast-temperature">
@@ -86,7 +86,7 @@ function showCurrentConditions(response) {
   );
   weatherIcon.setAttribute(
     "src",
-    `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`
+    `https://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`
   );
   weatherIcon.setAttribute("alt", response.data.weather[0].description);
   console.log(response.data);
@@ -131,4 +131,4 @@ fahrenheitLink.addEventListener("click", showFahrenheitTemperature);
 let celsiusLink = document.querySelector("#celsius-mark");
 celsiusLink.addEventListener("click", showCelsiusTemperature);
 
-searchCity("Dublin");
+searchCity("London");
