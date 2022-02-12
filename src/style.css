@@ -78,26 +78,15 @@ p a {
   font-weight: 500;
   font-size: 65px;
 }
-.tempUnits {
-  display: inline;
+
+.tempValue {
   position: relative;
   top: -35px;
   left: -14px;
-}
-
-.active {
-  color: black;
-}
-.tempValue a {
-  text-decoration: none;
   font-size: 20px;
   font-weight: 500;
 }
 
-.fahrenheitMark {
-  position: relative;
-  left: -5px;
-}
 .weatherForecast {
   margin-top: 35px;
   margin-bottom: 50px;
