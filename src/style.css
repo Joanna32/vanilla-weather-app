@@ -20,11 +20,8 @@ p a {
 
 .project {
   max-width: 60%;
-  background: linear-gradient(
-    178.6deg,
-    rgb(162, 213, 245) 3.3%,
-    rgb(252, 253, 255) 109.6%
-  );
+  background-image: url("/background-image/Sky.jpg");
+  background-size: 800px 550px;
   margin: 40px auto;
   border: 1px solid rgb(185, 181, 181);
   border-radius: 10px;
@@ -32,7 +29,7 @@ p a {
   font-family: "Roboto Mono", monospace;
 }
 .form-control {
-  background-color: rgb(250, 247, 247);
+  background-color: #f1f1f1;
   border: 1px solid #070f4e;
 }
 .button {
@@ -48,6 +45,7 @@ p a {
 .date {
   font-size: 15px;
   font-weight: 400;
+
   opacity: 0.8;
 }
 
@@ -88,13 +86,14 @@ p a {
 }
 
 .weatherForecast {
-  margin-top: 35px;
+  margin-top: 45px;
   margin-bottom: 50px;
   text-align: center;
 }
 .days {
   font-size: 16px;
   font-weight: 500;
+  opacity: 0.8;
 }
 .forecast-temperature {
   color: #070f4e;

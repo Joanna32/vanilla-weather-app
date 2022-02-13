@@ -73,6 +73,7 @@ function showCurrentConditions(response) {
   document.querySelector("#current-date").innerHTML = formatDate(
     response.data.dt * 1000
   );
+
   document.querySelector("#weather-conditions").innerHTML =
     response.data.weather[0].description;
   document.querySelector("#humidity").innerHTML = response.data.main.humidity;
