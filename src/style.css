@@ -19,7 +19,7 @@ p a {
 .project {
   max-width: 60%;
   background-image: url("/background-image/dandelion.jpg");
-  background-size: 800px 550px;
+  background-size: 1200px 1450px;
   margin: 40px auto 20px;
   border: 1px solid rgb(185, 181, 181);
   border-radius: 10px;
@@ -30,6 +30,7 @@ p a {
   background-color: #f1f1f1;
   border: 1px solid #054868;
 }
+
 .button {
   font-size: 17px;
   padding: 6px 45px;
@@ -41,6 +42,7 @@ p a {
 
 .unitDescription,
 .date {
+  color: #dedbdb;
   font-size: 15px;
   font-weight: 400;
   opacity: 0.8;
@@ -48,12 +50,13 @@ p a {
 
 .variableConditions,
 .conditionMark {
-  color: #054868;
-  font-size: 15px;
+  color: #03151d;
+  font-size: 16px;
   font-weight: 500;
 }
 
 .weatherDescription {
+  color: #fff3f3;
   font-size: 20px;
   margin-top: 10px;
   opacity: 0.8;
@@ -90,14 +93,13 @@ p a {
 .days {
   font-size: 16px;
   font-weight: 500;
-  opacity: 0.8;
 }
 .forecast-temperature {
-  color: #04293a;
+  color: #03151d;
   font-weight: 500;
 }
 .temperature-max {
-  font-size: 17px;
+  font-size: 16px;
 }
 .temperature-min {
   font-size: 15px;
